@@ -4,130 +4,730 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning HTML</title>
+    <title>Learning HTML Completo</title>
+    <style>
+        .navegação {
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .navegação li {
+
+            margin-bottom: 4px;
+        }
+
+        .navegação li {
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        hr {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <h2>Navegação</h2>
-        <ul>
-            <li><a href="#Text">Texto</a></li>
+        <ul class="navegação">
+            <li><a href="#Estruturais">Estruturais</a></li>
+            <li><a href="#Texto">Texto e Semântica</a></li>
             <li><a href="#Listas">Listas</a></li>
-            <li><a href="#Table">Tabelas</a></li>
-            <li><a href="#Midia">Midia</a></li>
-            <li><a href="#Links">Links</a></li>
-            <li><a href="#INPUT">Inputs</a></li>
-            <li><a href="#Form">Formulario</a></li>
+            <li><a href="#Links">Links e Navegação</a></li>
+            <li><a href="#Midia">Imagens e Mídia</a></li>
+            <li><a href="#Tabelas">Tabelas</a></li>
+            <li><a href="#Form">Formulários e Inputs</a></li>
+            <li><a href="#Meta">Metadados e Scripts</a></li>
+            <li><a href="#Interativas">Interativas</a></li>
+            <li><a href="#SVG">SVG e Gráficos Vetoriais</a></li>
         </ul>
     </nav>
-    <br>
+
     <hr>
-    <section id="Text">
-        <h2>Tags de Texto</h2>
-        <style>
-            body {
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-            }
 
-            a {
-                text-decoration: none;
-            }
+    <section id="Estruturais">
+        <h2>Estruturais / de Divisão</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < html>
+                </th>
+                <th>Elemento raiz</th>
+            </tr>
+            <tr>
+                <th>
 
-            .text_table {
-                margin-left: 60px;
-            }
+                    < head>
+                </th>
+                <th>Metadados do documento</th>
+            </tr>
+            <tr>
+                <th>
 
-            th {
-                padding: 5px;
-            }
-        </style>
-        <table class="text_table" border="1">
-            <tbody>
-                <tr>
-                    <th>
-                        < p>
-                    </th>
-                    <th>Tag de paragrafo </th>
+                    < body>
+                </th>
+                <th>Conteúdo visível</th>
+            </tr>
+            <tr>
+                <th>
+                    < header>
+                </th>
+                <th>Cabeçalho</th>
+            </tr>
+            <tr>
+                <th>
+                    < footer>
+                </th>
+                <th>Rodapé</th>
+            </tr>
+            <tr>
+                <th>
+                    < main>
+                </th>
+                <th>Conteúdo principal</th>
+            </tr>
+            <tr>
+                <th>
+                    < section>
+                </th>
+                <th>Seção temática</th>
+            </tr>
+            <tr>
+                <th>
+                    < article>
+                </th>
+                <th>Conteúdo independente</th>
+            </tr>
+            <tr>
+                <th>
+                    < nav>
+                </th>
+                <th>Navegação</th>
+            </tr>
+            <tr>
+                <th>
+                    < aside>
+                </th>
+                <th>Conteúdo lateral</th>
+            </tr>
+            <tr>
+                <th>
+                    < div>
+                </th>
+                <th>Divisão genérica</th>
+            </tr>
+            <tr>
+                <th>
+                    < address>
+                </th>
+                <th>Informações de contato</th>
+            </tr>
+            <tr>
+                <th>
+                    < figure>
+                </th>
+                <th>Conteúdo de mídia (ex: img)</th>
+            </tr>
+            <tr>
+                <th>
+                    < figcaption>
+                </th>
+                <th>Legenda para <figure>
+                </th>
+            </tr>
+        </table>
+    </section>
 
-                </tr>
-                <tr>
-                    <th>
-                        < h1>
-                    </th>
-                    <th>Tag de titulo</th>
-                </tr>
-                <tr>
-                    <th>
-                        < strong> ou < b>
-                    </th>
-                    <th>Texto em negrito</th>
-                </tr>
-                <tr>
-                    <th>
-                        < em> ou < i>
-                    </th>
-                    <th>Texto em italico</th>
-                </tr>
-                <tr>
-                    <th>
-                        < mark>
-                    </th>
-                    <th>Descata o texto</th>
-                </tr>
-                <tr>
-                    <th>
-                        < small>
-                    </th>
-                    <th>texto menor</th>
-                </tr>
-                <tr>
-                    <th>
-                        < code>
-                    </th>
-                    <th>código de progamação</th>
-                </tr>
-                <tr>
-                    <th>
-                        < blockquote>
-                    </th>
-                    <th>citação em bloco</th>
-                </tr>
-            </tbody>
+    <hr>
+
+    <section id="Texto">
+        <h2>Texto e Semântica</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < h1> - < h6>
+                </th>
+                <th>Títulos</th>
+            </tr>
+            <tr>
+                <th>
+                    < p>
+                </th>
+                <th>Parágrafo</th>
+            </tr>
+            <tr>
+                <th>
+                    < span>
+                </th>
+                <th>Trecho inline</th>
+            </tr>
+            <tr>
+                <th>
+                    < strong>
+                </th>
+                <th>Importante (negrito)</th>
+            </tr>
+            <tr>
+                <th>
+                    < em>
+                </th>
+                <th>Ênfase (itálico)</th>
+            </tr>
+            <tr>
+                <th>
+                    < b>
+                </th>
+                <th>Negrito visual</th>
+            </tr>
+            <tr>
+                <th>
+                    < i>
+                </th>
+                <th>Itálico visual</th>
+            </tr>
+            <tr>
+                <th>
+                    < u>
+                </th>
+                <th>Sublinhado visual</th>
+            </tr>
+            <tr>
+                <th>
+                    < s>
+                </th>
+                <th>Riscado (strikethrough)</th>
+            </tr>
+            <tr>
+                <th>
+                    < small>
+                </th>
+                <th>Texto menor</th>
+            </tr>
+            <tr>
+                <th>
+                    < mark>
+                </th>
+                <th>Marca texto</th>
+            </tr>
+            <tr>
+                <th>
+                    < blockquote>
+                </th>
+                <th>Citação em bloco</th>
+            </tr>
+            <tr>
+                <th>
+                    < q>
+                </th>
+                <th>Citação inline</th>
+            </tr>
+            <tr>
+                <th>
+                    < cite>
+                </th>
+                <th>Referência de uma obra</th>
+            </tr>
+            <tr>
+                <th>
+                    < abbr>
+                </th>
+                <th>Abreviação</th>
+            </tr>
+            <tr>
+                <th>
+                    < time>
+                </th>
+                <th>Data/Hora</th>
+            </tr>
+            <tr>
+                <th>
+                    < dfn>
+                </th>
+                <th>Termo de definição</th>
+            </tr>
+            <tr>
+                <th>
+                    < code>
+                </th>
+                <th>Trecho de código</th>
+            </tr>
+            <tr>
+                <th>
+                    < pre>
+                </th>
+                <th>Texto pré-formatado</th>
+            </tr>
+            <tr>
+                <th>
+                    < sup>
+                </th>
+                <th>Sobrescrito (superscript)</th>
+            </tr>
+            <tr>
+                <th>
+                    < sub>
+                </th>
+                <th>Subscrito (subscript)</th>
+            </tr>
+            <tr>
+                <th>
+                    < br>
+                </th>
+                <th>Quebra de linha</th>
+            </tr>
+            <tr>
+                <th>
+                    < hr>
+                </th>
+                <th>Linha horizontal</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Listas">
+        <h2>Listas</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < ul>
+                </th>
+                <th>Lista não ordenada</th>
+            </tr>
+            <tr>
+                <th>
+                    < ol>
+                </th>
+                <th>Lista ordenada</th>
+            </tr>
+            <tr>
+                <th>
+                    < li>
+                </th>
+                <th>Item da lista</th>
+            </tr>
+            <tr>
+                <th>
+                    < dl>
+                </th>
+                <th>Lista de definições</th>
+            </tr>
+            <tr>
+                <th>
+                    < dt>
+                </th>
+                <th>Termo</th>
+            </tr>
+            <tr>
+                <th>
+                    < dd>
+                </th>
+                <th>Descrição</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Links">
+        <h2>Links e Navegação</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < a>
+                </th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <th>
+                    < link>
+                </th>
+                <th>Relação de recurso (no
+
+                    <head>)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    < nav>
+                </th>
+                <th>Área de navegação</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Midia">
+        <h2>Imagens e Mídia</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < img>
+                </th>
+                <th>Imagem</th>
+            </tr>
+            <tr>
+                <th>
+                    < audio>
+                </th>
+                <th>Áudio</th>
+            </tr>
+            <tr>
+                <th>
+                    < video>
+                </th>
+                <th>Vídeo</th>
+            </tr>
+            <tr>
+                <th>
+                    < source>
+                </th>
+                <th>Fonte de mídia</th>
+            </tr>
+            <tr>
+                <th>
+                    < track>
+                </th>
+                <th>Legendas</th>
+            </tr>
+            <tr>
+                <th>
+                    < picture>
+                </th>
+                <th>Imagem responsiva</th>
+            </tr>
+            <tr>
+                <th>
+                    < iframe>
+                </th>
+                <th>Conteúdo embutido (janela)</th>
+            </tr>
+            <tr>
+                <th>
+                    < embed>
+                </th>
+                <th>Conteúdo externo (plugin)</th>
+            </tr>
+            <tr>
+                <th>
+                    < canvas>
+                </th>
+                <th>Área de desenho (script)</th>
+            </tr>
+            <tr>
+                <th>
+                    < map>
+                </th>
+                <th>Mapa de imagem</th>
+            </tr>
+            <tr>
+                <th>
+                    < area>
+                </th>
+                <th>Área clicável do mapa</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Tabelas">
+        <h2>Tabelas</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < table>
+                </th>
+                <th>Tabela</th>
+            </tr>
+            <tr>
+                <th>
+                    < thead>
+                </th>
+                <th>Cabeçalho da tabela</th>
+            </tr>
+            <tr>
+                <th>
+                    < tbody>
+                </th>
+                <th>Corpo da tabela</th>
+            </tr>
+            <tr>
+                <th>
+                    < tfoot>
+                </th>
+                <th>Rodapé da tabela</th>
+            </tr>
+            <tr>
+                <th>
+                    < tr>
+                </th>
+                <th>Linha</th>
+            </tr>
+            <tr>
+                <th>
+                    < th>
+                </th>
+                <th>Célula de cabeçalho</th>
+            </tr>
+            <tr>
+                <th>
+                    < td>
+                </th>
+                <th>Célula de dado</th>
+            </tr>
+            <tr>
+                <th>
+                    < caption>
+                </th>
+                <th>Legenda da tabela</th>
+            </tr>
+            <tr>
+                <th>
+                    < col>
+                </th>
+                <th>Coluna</th>
+            </tr>
+            <tr>
+                <th>
+                    < colgroup>
+                </th>
+                <th>Grupo de colunas</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Form">
+        <h2>Formulários e Inputs</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < form>
+                </th>
+                <th>Formulário</th>
+            </tr>
+            <tr>
+                <th>
+                    < input>
+                </th>
+                <th>Campo de entrada</th>
+            </tr>
+            <tr>
+                <th>
+                    < textarea>
+                </th>
+                <th>Texto longo</th>
+            </tr>
+            <tr>
+                <th>
+                    < select>
+                </th>
+                <th>Lista suspensa</th>
+            </tr>
+            <tr>
+                <th>
+                    < option>
+                </th>
+                <th>Opção da lista</th>
+            </tr>
+            <tr>
+                <th>
+                    < optgroup>
+                </th>
+                <th>Grupo de opções</th>
+            </tr>
+            <tr>
+                <th>
+                    < label>
+                </th>
+                <th>Rótulo</th>
+            </tr>
+            <tr>
+                <th>
+                    < button>
+                </th>
+                <th>Botão</th>
+            </tr>
+            <tr>
+                <th>
+                    < fieldset>
+                </th>
+                <th>Agrupar campos</th>
+            </tr>
+            <tr>
+                <th>
+                    < legend>
+                </th>
+                <th>Título do grupo</th>
+            </tr>
+            <tr>
+                <th>
+                    < datalist>
+                </th>
+                <th>Lista de sugestões</th>
+            </tr>
+            <tr>
+                <th>
+                    < output>
+                </th>
+                <th>Resultado de cálculo</th>
+            </tr>
+            <tr>
+                <th>
+                    < progress>
+                </th>
+                <th>Barra de progresso</th>
+            </tr>
+            <tr>
+                <th>
+                    < meter>
+                </th>
+                <th>Medidor (barra)</th>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="Meta">
+        <h2>Metadados e Scripts</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < meta>
+                </th>
+                <th>Metadados</th>
+            </tr>
+            <tr>
+                <th>
+                    < title>
+                </th>
+                <th>Título da aba</th>
+            </tr>
+            <tr>
+                <th>
+                    style
+                </th>
+                <th>Estilo interno (CSS)</th>
+            </tr>
+            <tr>
+                <th>
+                     script
+                </th>
+                <th>Script (JavaScript)</th>
+            </tr>
+            <tr>
+                <th>< noscript ></th>
+                <th>Conteúdo alternativo sem JS</th>
+            </tr>
+            <tr>
+                <th>
+                    < base >
+                </th>
+                <th>URL base</th>
+            </tr>
         </table>
     </section>
     <hr>
-    <section id="Listas"></section>
-    <table id="list_table" border="1">
-        <tbody>
+    <section id="Interativas">
+        <h2>Interativas</h2>
+        <table border="1">
             <tr>
-                <th></th>
-                <th></th>
+                <th>
+                    < details >
+                </th>
+                <th>Bloco expansível</th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                <th>
+                    < summary >
+                </th>
+                <th>Título do bloco</th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                <th> < details ></th>
+                <th>Detalhes de algo(formato de caixa)</th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                <th>
+                    < dialog >
+                </th>
+                <th>Caixa de diálogo</th>
             </tr>
-        </tbody>
-    </table>
-
-    </section>
-    <section id="Table">
-        <ul class="table_list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <tr>
+                <th>
+                    < menu >
+                </th>
+                <th>Menu interativo</th>
+            </tr>
+        </table>
     </section>
     <hr>
+    <section id="SVG">
+        <h2>SVG e Gráficos Vetoriais</h2>
+        <table border="1">
+            <tr>
+                <th>
+                    < svg >
+                </th>
+                <th>Gráfico vetorial</th>
+            </tr>
+            <tr>
+                <th>
+                    < path >
+                </th>
+                <th>Caminho (vetor)</th>
+            </tr>
+            <tr>
+                <th>
+                    < circle >
+                </th>
+                <th>Círculo</th>
+            </tr>
+            <tr>
+                <th>
+                    < rect >
+                </th>
+                <th>Retângulo</th>
+            </tr>
+            <tr>
+                <th>
+                    < line >
+                </th>
+                <th>Linha</th>
+            </tr>
+            <tr>
+                <th>
+                    < polygon >
+                </th>
+                <th>Polígono</th>
+            </tr>
+            <tr>
+                <th>
+                    < polyline >
+                </th>
+                <th>Polilinha (várias linhas)</th>
+            </tr>
+            <tr>
+                <th>
+                    < text >
+                </th>
+                <th>Texto vetorial</th>
+            </tr>
+            <tr>
+                <th>
+                    < g >
+                </th>
+                <th>Grupo de elementos</th>
+            </tr>
+        </table>
+    </section>
 </body>
 
 </html>
